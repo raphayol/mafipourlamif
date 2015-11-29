@@ -1,0 +1,19 @@
+# Installer la gem yahoo-finance
+$ bundle install
+
+doc: https://github.com/herval/yahoo-finance
+
+
+## liste de symboles
+
+#NASDAQ
+https://fr.finance.yahoo.com/q/cp?s=^IXIC
+
+#CAC40
+https://fr.finance.yahoo.com/q/cp?s=^FCHI
+
+# Fonctionnement A la mano:
+Choisir sa date de départ (first)
+Choisir sa date de fin (last)
+Choisir son symbol
+$ ./tunes

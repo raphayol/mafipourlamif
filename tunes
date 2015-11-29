@@ -1,0 +1,22 @@
+#! /usr/bin/ruby
+
+require 'yahoo-finance'
+
+def main
+  yahoo_client = YahooFinance::Client.new
+
+  first = Date.today - 365
+  last  = Date.today
+  symb  = "EDF.PA"
+
+  data = yahoo_client.historical_quotes(
+    symb,
+    {start_date: first, end_date: last}
+  )
+
+  puts data
+end
+
+if __FILE__ == $0
+  main
+end
